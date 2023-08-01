@@ -1,0 +1,25 @@
+class Student:
+    def __init__(self, name, grade, age):
+        self.name = name
+        self.grade = grade
+        self.age = age
+
+    def display(self):
+        print("Name:", self.name)
+        print("Grade:", self.grade)
+        print("Age:", self.age)
+
+
+class School(Student):
+    def SchoolStudentDisplay(self):
+        print("Name:", self.name)
+        print("Grade:", self.grade)
+        print("Age:", self.age)
+
+
+if __name__ == "__main__":
+    student = Student("John Doe", 10, 12)
+    student.display()
+
+    school_student = School("Jane Doe", 11, 13)
+    school_student.SchoolStudentDisplay()
